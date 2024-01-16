@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+<div class="w-100 vh-100 bg-black d-flex justify-content-center flex-column align-items-center">
+    <div class="w-75 ">
+        <img src="images/intro.gif" class="w-100 rounded-5" alt="">
+        <audio  id="intro-audio">
+            <source src="audio/Movie%20Freaky%20Scene-SoundBible.com-498428129.mp3">
+        </audio>
+    </div>
+    <div class="pt-1 ">
+        <a href="Start" class="btn btn-outline-secondary mx-auto w-100">start the game</a>
+    </div>
+</div>
+<script>
+    let x=document.getElementById("intro-audio");
+
+    document.addEventListener("click",function () {
+        x.play();
+    })
+</script>
+</body>
+</html>
